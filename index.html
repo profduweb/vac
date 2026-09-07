@@ -3,333 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VAC — Vulgarisateur Apple & Cie | Apple, apps, IA et tech</title>
-  <meta name="description" content="VAC, la chaîne de Mat (@profduweb) pour mieux utiliser Mac, iPad et iPhone, découvrir des applications, comprendre l’IA et suivre la tech sans jargon.">
-  <meta name="author" content="Mat — profduweb.com">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#0b0b10">
-  <link rel="canonical" href="https://appleetcompagnie.com/">
-
+  <title>VAC — Vulgarisateur Apple &amp; Cie</title>
+  <meta name="description" content="VAC, la chaîne de Mat pour mieux comprendre Apple, les apps, l'IA et la technologie, sans jargon.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://vac.profduweb.com/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400..800&amp;display=swap" rel="stylesheet">
+  <meta property="og:title" content="VAC — Vulgarisateur Apple &amp; Cie">
+  <meta property="og:description" content="Apple, apps, IA et technologie : des vidéos utiles, accessibles et sans jargon.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
-  <meta property="og:site_name" content="VAC — Vulgarisateur Apple & Cie">
-  <meta property="og:title" content="VAC — Apple, la tech et le reste. Enfin expliqués.">
-  <meta property="og:description" content="Des vidéos de Mat pour comprendre Apple, découvrir de bonnes apps et garder un regard lucide sur l’IA et la tech.">
-  <meta property="og:url" content="https://appleetcompagnie.com/">
-  <meta property="og:image" content="https://appleetcompagnie.com/social-card.jpg">
-  <meta property="og:image:secure_url" content="https://appleetcompagnie.com/social-card.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="VAC — Vulgarisateur Apple & Cie, par Mat">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VAC — Apple, la tech et le reste. Enfin expliqués.">
-  <meta name="twitter:description" content="Apple, apps, IA et productivité : des vidéos utiles, accessibles et sans langue de bois.">
-  <meta name="twitter:image" content="https://appleetcompagnie.com/social-card.jpg">
-  <meta name="twitter:image:alt" content="VAC — Vulgarisateur Apple & Cie, par Mat">
-
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="VAC.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://www.youtube-nocookie.com">
-  <link rel="stylesheet" href="styles.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "VAC — Vulgarisateur Apple & Cie",
-    "url": "https://appleetcompagnie.com/",
-    "inLanguage": "fr-CA",
-    "description": "La chaîne de Mat consacrée à Apple, aux applications, à l’intelligence artificielle, à la productivité et à la culture numérique.",
-    "publisher": {
-      "@type": "Person",
-      "name": "Mat",
-      "url": "https://profduweb.com/",
-      "sameAs": [
-        "https://www.youtube.com/@appetco",
-        "https://instagram.com/profduweb",
-        "https://mastodon.social/@profduweb",
-        "https://www.threads.net/@profduweb",
-        "https://bsky.app/profile/profduweb.com"
-      ]
+  <meta property="og:url" content="https://vac.profduweb.com/">
+  <meta property="og:image" content="https://vac.profduweb.com/VAC.png">
+  <style>
+    :root {
+      --bg:#ffffff;
+      --ink:#0b0b10;
+      --muted:#625e69;
+      --blue:#1186f5;
+      --purple:#9901e5;
+      --pink:#d7076b;
+      --line:rgba(11,11,16,.12);
+      --max:750px;
     }
-  }
-  </script>
-
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      min-height:100vh;
+      margin:0;
+      background:
+        radial-gradient(ellipse at 15% -15%,rgba(17,134,245,.09),transparent 42%),
+        radial-gradient(ellipse at 85% -10%,rgba(215,7,107,.08),transparent 42%),
+        var(--bg);
+      color:var(--ink);
+      font-family:"Raleway",sans-serif;
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+    }
+    a { color:inherit; }
+    main, footer { width:min(calc(100% - 40px),var(--max)); margin:0 auto; }
+    .hero {
+      display:flex;
+      min-height:calc(100vh - 105px);
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:42px 0 30px;
+      text-align:center;
+    }
+    .logo-card {
+      display:grid;
+      width:min(88vw,520px);
+      min-height:170px;
+      place-items:center;
+      padding:10px;
+    }
+    .logo { display:block; width:100%; height:auto; }
+    .brand-line {
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:clamp(1.65rem,4vw,2.3rem);
+      font-weight:750;
+      line-height:1.05;
+      letter-spacing:-.035em;
+    }
+    .tagline {
+      max-width:570px;
+      margin:19px 0 0;
+      color:var(--muted);
+      font-size:clamp(1.05rem,2.5vw,1.22rem);
+    }
+    .tagline a { color:var(--ink); }
+    .actions { display:grid; width:min(100%,360px); gap:12px; margin-top:30px; }
+    .action {
+      display:flex;
+      min-height:55px;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      border-radius:999px;
+      background:linear-gradient(100deg,var(--blue),var(--purple) 52%,var(--pink));
+      color:#fff;
+      font-family:inherit;
+      font-size:1.05rem;
+      font-weight:750;
+      text-decoration:none;
+      box-shadow:0 12px 28px rgba(153,1,229,.28);
+      transition:transform 160ms ease,box-shadow 160ms ease;
+    }
+    button.action { width:100%; border:0; cursor:pointer; }
+    .action:hover { transform:translateY(-2px); box-shadow:0 16px 34px rgba(215,7,107,.32); }
+    .action:focus-visible, .modal-close:focus-visible, .modal-links a:focus-visible, .socials a:focus-visible {
+      outline:3px solid var(--ink);
+      outline-offset:3px;
+    }
+    .play-icon {
+      width:23px;
+      height:23px;
+      fill:none;
+      stroke:currentColor;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-width:1.9;
+    }
+    footer { padding:0 0 28px; color:var(--muted); font-size:.9rem; text-align:center; }
+    .socials { display:flex; flex-wrap:wrap; justify-content:center; gap:18px; }
+    .socials a { display:inline-flex; align-items:center; gap:7px; text-decoration:none; }
+    .socials a:hover { color:var(--ink); }
+    .social-dot { width:8px; height:8px; border-radius:50%; background:var(--pink); }
+    .socials a:nth-child(2) .social-dot { background:var(--purple); }
+    .socials a:nth-child(3) .social-dot { background:var(--blue); }
+    .modal[hidden] { display:none; }
+    .modal {
+      position:fixed;
+      z-index:10;
+      inset:0;
+      display:grid;
+      place-items:center;
+      padding:24px;
+      background:rgba(21,18,25,.28);
+      backdrop-filter:blur(9px);
+    }
+    .modal-card {
+      position:relative;
+      width:min(100%,500px);
+      padding:40px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:#fff;
+      box-shadow:0 25px 70px rgba(30,25,35,.24);
+    }
+    .modal-card h2 { margin:0 0 26px; font-size:2rem; line-height:1; letter-spacing:-.04em; }
+    .modal-close {
+      position:absolute;
+      top:16px;
+      right:16px;
+      display:grid;
+      width:38px;
+      height:38px;
+      place-items:center;
+      border:0;
+      border-radius:50%;
+      background:rgba(11,11,16,.07);
+      color:var(--ink);
+      font-size:1.7rem;
+      cursor:pointer;
+    }
+    .modal-close:hover { background:var(--pink); color:#fff; }
+    .modal-links { display:grid; gap:9px; }
+    .modal-links a {
+      display:flex;
+      min-height:55px;
+      align-items:center;
+      gap:14px;
+      padding:0 17px;
+      border-radius:11px;
+      background:#f4f3f6;
+      color:var(--ink);
+      font-weight:650;
+      text-decoration:none;
+      transition:background 160ms ease,transform 160ms ease;
+    }
+    .modal-links a:hover { transform:translateX(2px); background:#ece9f1; }
+    .link-icon {
+      display:grid;
+      width:30px;
+      height:30px;
+      flex:0 0 30px;
+      place-items:center;
+      color:var(--pink);
+    }
+    .link-icon svg {
+      width:25px;
+      height:25px;
+      fill:none;
+      stroke:currentColor;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-width:1.8;
+    }
+    .modal-links a:nth-child(2) .link-icon { color:#b949f2; }
+    .modal-links a:nth-child(3) .link-icon { color:#538eff; }
+    .modal-links a:nth-child(4) .link-icon { color:#e9388b; }
+    @media (max-width:560px) {
+      main, footer { width:min(calc(100% - 28px),var(--max)); }
+      .hero { min-height:calc(100vh - 130px); padding-top:28px; }
+      .logo-card { min-height:135px; padding:8px; }
+      .modal-card { padding:38px 20px 20px; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      *, *::before, *::after { scroll-behavior:auto!important; transition:none!important; }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="VAC — Retour à l’accueil">
-      <img src="VAC-blanc.svg" alt="VAC — Vulgarisateur Apple & Cie">
-    </a>
-    <nav aria-label="Navigation principale">
-      <a href="#comprendre">Comprendre</a>
-      <a href="#boutique">Boutique</a>
-      <a class="nav-cta" href="https://www.youtube.com/@appetco?sub_confirmation=1" target="_blank" rel="noopener">S’abonner</a>
-    </nav>
-  </header>
-
-  <main id="contenu">
-    <section class="hero" id="accueil">
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <p class="eyebrow"><span></span> Vulgarisateur Apple & Cie</p>
-        <h1>Apple<br><em>enfin expliqué.</em></h1>
-        <p class="hero-lead">VAC est la chaîne de Mat pour mieux utiliser votre Mac, votre iPad et votre iPhone, choisir de bonnes apps, comprendre l’IA et garder un rapport pragmatique à la technologie.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://www.youtube.com/@appetco?sub_confirmation=1" target="_blank" rel="noopener">
-            <span class="play-icon" aria-hidden="true">▶</span> S’abonner sur YouTube
-          </a>
-          <a class="button button-ghost" href="https://buymeacoffee.com/profduweb" target="_blank" rel="noopener">Faire un don</a>
-          <a class="button button-ghost" href="https://www.youtube.com/channel/UCNzUonmxxvG-HIqOC3S7Thw/join" target="_blank" rel="noopener">Devenir membre</a>
-        </div>
-        <p class="byline">Par <a href="https://profduweb.com/" target="_blank" rel="noopener">Mat — profduweb.com</a> <span aria-hidden="true">·</span> Depuis le Québec</p>
-        <div class="social-links" aria-label="Retrouver Mat sur les réseaux sociaux">
-          <a href="https://instagram.com/profduweb" target="_blank" rel="noopener" aria-label="Instagram de Mat">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 2.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/></svg>
-          </a>
-          <a href="https://mastodon.social/@profduweb" target="_blank" rel="me noopener" aria-label="Mastodon de Mat">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 8.5c0-4.1-2.7-5.3-2.7-5.3C15 2 9 2 6.3 3.2c0 0-2.7 1.2-2.7 5.3 0 4.8-.3 10.8 4.5 12 .9.2 1.8.3 2.7.3 1.7 0 2.8-.4 2.8-.4l-.1-1.7s-1.3.4-2.8.3c-1.5 0-3-.2-3.2-2.1a3 3 0 0 1 0-.6c3.2.8 6 .3 6.7.2 2.5-.3 4.7-1.8 5-3.1.4-2.1.3-4.9.3-4.9Zm-3.5 5.1h-2.1V8.4c0-2.2-2.8-2.3-2.8.3v2.8H9.9V8.7c0-2.6-2.8-2.5-2.8-.3v5.2H5V8.2c0-2.4 1.5-3.1 3-3.1 1.5 0 2.3.6 3 1.7l.7 1.2.7-1.2c.7-1.1 1.5-1.7 3-1.7s3 .7 3 3.1v5.4Z"/></svg>
-          </a>
-          <a href="https://www.threads.net/@profduweb" target="_blank" rel="noopener" aria-label="Threads de Mat">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.4 2C7 2 3.7 5.5 3.7 11.4c0 6.7 3.8 10.6 10 10.6 3.8 0 6.6-1.8 6.6-5.2 0-2.5-1.5-4.2-4.1-4.8-.2-3.4-2.1-5.3-5.1-5.3-2.3 0-4 1.2-4.8 3.2l1.9.8c.5-1.3 1.4-2 2.8-2 1.7 0 2.7 1 3 2.9h-2.6c-2.9 0-4.7 1.4-4.7 3.6 0 2.1 1.7 3.5 4.2 3.5 2.8 0 4.7-1.6 5.2-4.5 1.4.4 2.1 1.2 2.1 2.4 0 2.1-1.8 3.3-4.6 3.3-4.9 0-7.7-3.1-7.7-8.5C5.9 6.7 8.3 4 12.4 4c3.2 0 5.4 1.7 6.2 4.8l2.1-.6C19.7 4.2 16.8 2 12.4 2Zm-1.5 14.8c-1.3 0-2.1-.6-2.1-1.5 0-1 .9-1.6 2.5-1.6h2.8c-.3 1.9-1.4 3.1-3.2 3.1Z"/></svg>
-          </a>
-          <a href="https://bsky.app/profile/profduweb.com" target="_blank" rel="noopener" aria-label="Bluesky de Mat">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 11.2C10.9 8.9 7.8 4.8 5 2.9 2.3 1 1.3 1.4.6 1.7-.2 2.1 0 3.3 0 4c0 .7.4 5.8.6 6.6.8 2.8 3.8 3.7 6.5 3.4-4 .6-7.5 2-2.9 7.2 5.1 5.3 7-1.1 7.8-4.4.8 3.3 2 9.5 7.8 4.4 4.6-4.6 1.1-6.6-2.9-7.2 2.7.3 5.7-.6 6.5-3.4.2-.8.6-5.9.6-6.6 0-.7.2-1.9-.6-2.3-.7-.3-1.7-.7-4.4 1.2-2.8 1.9-5.9 6-7 8.3Z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCNzUonmxxvG-HIqOC3S7Thw" target="_blank" rel="noopener" aria-label="Flux RSS de la chaîne YouTube VAC">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 15.6a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Zm-3-6.8c7.2 0 13 5.8 13 13h-3.7a9.3 9.3 0 0 0-9.3-9.3V8.8Zm0-6.8C13.1 2 22 10.9 22 21.8h-3.8c0-8.8-7.2-16-16-16V2Z"/></svg>
-          </a>
-        </div>
+  <main>
+    <header class="hero">
+      <div class="logo-card">
+        <img class="logo" src="VAC.png" alt="VAC — Vulgarisateur Apple &amp; Cie">
       </div>
-      <div class="hero-mark" aria-hidden="true">
-        <span class="mark mark-blue"></span>
-        <span class="mark mark-purple"></span>
-        <span class="mark mark-pink"></span>
+      <h1 class="brand-line">Vulgarisateur Apple &amp; Cie</h1>
+      <p class="tagline">Des vidéos pour mieux utiliser la technologie, faire durer vos appareils, protéger vos données et découvrir des outils vraiment utiles. Apple, logiciels, productivité, vie privée et numérique expliqué simplement, sans jargon.</p>
+      <div class="actions">
+        <button class="action" id="open-modal" type="button">
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="4"/>
+            <path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none"/>
+          </svg>
+          Découvrir VAC
+        </button>
       </div>
-    </section>
-
-    <section class="manifesto" id="comprendre" aria-labelledby="promesse">
-      <p class="section-kicker"><span></span> Ce que vous trouverez ici</p>
-      <h2 id="promesse">Moins de jargon.<br><span>Plus d’usage.</span></h2>
-      <p>Je pars des vrais problèmes : configurer, choisir, automatiser, comprendre, gagner du temps. L’objectif n’est pas d’aimer la tech pour la tech, mais de vous aider à faire de meilleurs choix au quotidien.</p>
-      <ul class="usage-list" aria-label="Sujets abordés sur VAC">
-        <li>Mac, iPad, iPhone : réglages et usages concrets.</li>
-        <li>Apps utiles : ce qui vaut vraiment votre temps.</li>
-        <li>IA, automatisation et tech : comprendre sans se noyer.</li>
-      </ul>
-    </section>
-
-    <section class="testimonials" id="temoignages" aria-labelledby="testimonials-title">
-      <div class="testimonials-heading">
-        <div>
-          <p class="section-kicker"><span></span> Vos commentaires</p>
-          <h2 id="testimonials-title">Ce qu’ils disent de VAC</h2>
-        </div>
-        <div class="carousel-controls" aria-label="Navigation des commentaires">
-          <button class="carousel-control" type="button" data-carousel-previous>Précédent</button>
-          <button class="carousel-control" type="button" data-carousel-next>Suivant</button>
-        </div>
-      </div>
-
-      <div class="testimonial-viewport" data-testimonial-carousel tabindex="0" aria-label="Commentaires des spectateurs">
-        <div class="testimonial-track">
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Super et merci pour mes économies 😂 Je vais garder les Pro v2 je savais pas que la traduction était aussi accessible sur Pro v2 et 4. Bonne continuation. Ah ta vidéo est super et objective. ❤</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=_Kv1cYi7yhQ&amp;lc=UgyhODfEOvvugY1kqux4AaABAg" target="_blank" rel="noopener">@gam3955</a></cite>
-                <time datetime="2025-11-27T07:23:00-05:00">Échange du 27 novembre 2025 à 7 h 23</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Merci pour cette vidéo claire et pertinente pour acheter les AirPods pro3</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=_Kv1cYi7yhQ&amp;lc=UgwaA9fztFvPRTxqb6V4AaABAg" target="_blank" rel="noopener">@zinoBenchikh</a></cite>
-                <time datetime="2025-09-23T06:28:00-04:00">Échange du 23 septembre 2025 à 6 h 28</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Très précieux. Bien expliqué. Enfin je saurai chercher dans tout le MAC! Et autres recherches. Je galérais avec spotlight. ..</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=VhEVk41Qhj0&amp;lc=UgxaQdUsNux4qauJZHp4AaABAg" target="_blank" rel="noopener">@arinasaito9773</a></cite>
-                <time datetime="2025-06-25T07:02:00-04:00">Échange du 25 juin 2025 à 7 h 02</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Je le fais pas souvent (par cause de temps) mais là cette vidéo m'a été vraiment utile venant de Windows alors un grand merci à toi !</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=VhEVk41Qhj0&amp;lc=UgxZQogIbywFXrXFn6p4AaABAg" target="_blank" rel="noopener">@nesc78</a></cite>
-                <time datetime="2025-03-22T08:16:00-04:00">Échange du 22 mars 2025 à 8 h 16</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>MERCI ! C’est simple, rapide et efficace !</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=VhEVk41Qhj0&amp;lc=Ugwl55d9RME0LcUhB1V4AaABAg" target="_blank" rel="noopener">@AndréeRobert</a></cite>
-                <time datetime="2024-12-10T11:35:00-05:00">Échange du 10 décembre 2024 à 11 h 35</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Présentation exemplaire. Compliments et merci.</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=VhEVk41Qhj0&amp;lc=UgwOdHDm1_nO7ytNnfd4AaABAg" target="_blank" rel="noopener">@GérardCormier</a></cite>
-                <time datetime="2024-11-09T11:23:00-05:00">Échange du 9 novembre 2024 à 11 h 23</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Merci pour cette vidéo. Pour l'instant la plus claire que j'ai trouvé dans YouTube. […]</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=7Wo3W4lHLio&amp;lc=Ugz7x1GD7g7mW_86VZh4AaABAg" target="_blank" rel="noopener">@rportanova</a></cite>
-                <time datetime="2024-10-10T12:22:00-04:00">Échange du 10 octobre 2024 à 12 h 22</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Toujours un contenu intéressant. Bravo pour ta chaîne et son contenu 👍🏼👌🏼</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=ZoKTApRsvkc&amp;lc=UgzGZpYm970KNGhYycR4AaABAg" target="_blank" rel="noopener">@misterfinch216</a></cite>
-                <time datetime="2024-05-19T12:48:00-04:00">Échange du 19 mai 2024 à 12 h 48</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Merci Mat pour ce tuto très clair, je vous découvre grace à Audrey Couleau qui m'a aussi fait découvrir votre podcast Apple differemment où j'ai bien aimé votre dernier épisode: Parlons ergonomie</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=7Wo3W4lHLio&amp;lc=UgwVvSjJRuWnpNjSj9B4AaABAg" target="_blank" rel="noopener">@mig12394</a></cite>
-                <time datetime="2023-04-18T17:01:00-04:00">Échange du 18 avril 2023 à 17 h 01</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>En tout cas cette EXCELLENTE vidéo m'a donné envie de tester, ce que je fais depuis hier !</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=oCaVxUZJP-k&amp;lc=UgxMTKMIDR7jhGUmLKV4AaABAg" target="_blank" rel="noopener">@passion-immo</a></cite>
-                <time datetime="2022-07-23T09:25:00-04:00">Échange du 23 juillet 2022 à 9 h 25</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Une vidéo excellente et très utile sur les fonctions principales d’Inoreader !!! Merci beaucoup pour votre dévouement à l’enregistrement. Salutations.</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=oCaVxUZJP-k&amp;lc=UgwYeSLZ627I33G5R_F4AaABAg" target="_blank" rel="noopener">@asolepascual</a></cite>
-                <time datetime="2022-07-09T19:03:00-04:00">Échange du 9 juillet 2022 à 19 h 03</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Excellente vidéo, faudrait que ce soit le tuto officiel de inoreader version francophone. […]</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=oCaVxUZJP-k&amp;lc=UgzugfonlcoHmp4HT814AaABAg" target="_blank" rel="noopener">@ebrettevillespliiit</a></cite>
-                <time datetime="2022-07-07T17:16:00-04:00">Échange du 7 juillet 2022 à 17 h 16</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>merci pour ce test vraiment complet et tes explications sont simple et claire</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=S0ti8EQm7vM&amp;lc=UgwMuEt2dom4tR-LrAt4AaABAg" target="_blank" rel="noopener">@kifredbull1320</a></cite>
-                <time datetime="2022-05-15T16:39:00-04:00">Échange du 15 mai 2022 à 16 h 39</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Hello, très belle découverte. Le test et explications sont parfaites. Tes vidéos sont un bon complément à tes podcasts 👌🏻😉</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=S0ti8EQm7vM&amp;lc=Ugx5DKrc_8WszaEnnpp4AaABAg" target="_blank" rel="noopener">@florianh1504</a></cite>
-                <time datetime="2021-11-25T10:01:00-05:00">Échange du 25 novembre 2021 à 10 h 01</time>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p>Merci mon ami, et bravo pour tes vidéos 👍</p>
-              <footer>
-                <cite><a href="https://www.youtube.com/watch?v=7Wo3W4lHLio&amp;lc=UgyiOqkOmS-QeZLEQWB4AaABAg" target="_blank" rel="noopener">@AudreyCouleauFormationsApple</a></cite>
-                <time datetime="2021-09-24T20:55:00-04:00">Échange du 24 septembre 2021 à 20 h 55</time>
-              </footer>
-            </blockquote>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="shop" id="boutique" aria-labelledby="shop-title">
-      <div class="shop-heading">
-        <div>
-          <p class="section-kicker"><span></span> VAC, la boutique</p>
-          <h2 id="shop-title">Portez les couleurs de VAC.</h2>
-        </div>
-        <p>La boutique officielle s’affiche directement ici. Spring adapte les produits, les prix et la livraison à votre région.</p>
-      </div>
-
-      <iframe class="spring-store-embed" style="border-radius:24px;border:none" src="https://embed.creator-spring.com/widget?slug=my-store-10517fa&amp;per=20&amp;currency=&amp;page=1&amp;layout=grid-sm-4&amp;theme=dark" title="VAC Merch store powered by Spring" width="100%" height="960" loading="lazy" data-reactroot=""></iframe>
-
-      <div class="shop-footer">
-        <a href="https://my-store-10517fa.creator-spring.com/" target="_blank" rel="noopener">Ouvrir la boutique dans une nouvelle fenêtre</a>
-        <p>Les prix, les devises et les disponibilités sont fournis directement par Spring.</p>
-      </div>
-    </section>
-
-    <section class="club" id="club" aria-labelledby="club-title">
-      <div class="club-intro">
-        <p class="section-kicker"><span></span> Le Club VAC</p>
-        <h2 id="club-title">Pour aller plus loin</h2>
-        <p>Le Club VAC permet de soutenir directement la chaîne et d’accéder à l’espace membres : <a href="https://discord.gg/Wdcnvt48" target="_blank" rel="noopener">Discord privé</a>, contenus réservés, surprises et <a href="https://profduweb.com/liens-du-club-vac/" target="_blank" rel="noopener">liens privés</a>. Les détails sont sur la page <a href="https://www.youtube.com/channel/UCNzUonmxxvG-HIqOC3S7Thw/join" target="_blank" rel="noopener">YouTube membres</a>.</p>
-      </div>
-    </section>
+    </header>
   </main>
 
-  <footer>
-    <a class="footer-brand" href="#accueil">
-      <img src="VAC.png" alt="VAC" width="1480" height="403">
-    </a>
-    <p>Vulgarisateur Apple & Cie<br>Une chaîne de <a href="https://profduweb.com/" target="_blank" rel="noopener">Mat — profduweb.com</a></p>
-    <div class="footer-links">
-      <a href="https://www.youtube.com/@appetco" target="_blank" rel="noopener">YouTube ↗</a>
-      <a href="https://buymeacoffee.com/profduweb" target="_blank" rel="noopener">Soutenir ↗</a>
+  <div class="modal" id="vac-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="close-modal" type="button" aria-label="Fermer la fenêtre">×</button>
+      <h2 id="modal-title">Retrouver VAC</h2>
+      <div class="modal-links">
+        <a href="https://www.youtube.com/@appetco?sub_confirmation=1">
+          <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none"/></svg></span>
+          Voir la chaîne YouTube
+        </a>
+        <a href="https://www.youtube.com/channel/UCNzUonmxxvG-HIqOC3S7Thw/join">
+          <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></span>
+          Devenir membre
+        </a>
+        <a href="https://buymeacoffee.com/profduweb">
+          <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V8Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 4v1M12 4v1"/></svg></span>
+          Soutenir la chaîne
+        </a>
+        <a href="https://my-store-10517fa.creator-spring.com/">
+          <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V7a3 3 0 0 1 6 0v2"/></svg></span>
+          Visiter la boutique
+        </a>
+      </div>
     </div>
-    <p class="copyright">© <span data-year></span> VAC</p>
+  </div>
+
+  <footer>
+    <div class="socials" aria-label="Réseaux sociaux de profduweb">
+      <a href="https://instagram.com/profduweb"><span class="social-dot"></span>Instagram</a>
+      <a href="https://bsky.app/profile/profduweb.com"><span class="social-dot"></span>Bluesky</a>
+      <a href="https://mastodon.social/@profduweb"><span class="social-dot"></span>Mastodon</a>
+      <a href="https://www.youtube.com/@appetco"><span class="social-dot"></span>YouTube</a>
+    </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script>
+    const openModal = document.getElementById('open-modal');
+    const modal = document.getElementById('vac-modal');
+    const closeModal = document.getElementById('close-modal');
+    const close = () => { modal.hidden = true; openModal.focus(); };
+
+    openModal.addEventListener('click', () => { modal.hidden = false; closeModal.focus(); });
+    closeModal.addEventListener('click', close);
+    modal.addEventListener('click', (event) => { if (event.target === modal) close(); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !modal.hidden) close(); });
+  </script>
 </body>
 </html>
