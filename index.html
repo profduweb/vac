@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VAC — Vulgarisateur Apple &amp; Cie</title>
   <meta name="description" content="VAC, la chaîne de Mat pour mieux comprendre Apple, les apps, l'IA et la technologie, sans jargon.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0f0f0e">
   <link rel="canonical" href="https://vac.profduweb.com/">
-  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.ico?v=2" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400..800&amp;display=swap" rel="stylesheet">
@@ -16,16 +17,18 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:url" content="https://vac.profduweb.com/">
-  <meta property="og:image" content="https://vac.profduweb.com/VAC.png">
+  <meta property="og:image" content="https://vac.profduweb.com/social-card.jpg?v=2">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://vac.profduweb.com/social-card.jpg?v=2">
   <style>
     :root {
-      --bg:#ffffff;
-      --ink:#0b0b10;
-      --muted:#625e69;
-      --blue:#1186f5;
-      --purple:#9901e5;
-      --pink:#d7076b;
-      --line:rgba(11,11,16,.12);
+      --bg:#0f0f0e;
+      --ink:#f7f5f1;
+      --muted:#c6c1b8;
+      --blue:#FFC93C;
+      --purple:#FF9A3C;
+      --pink:#FF6F3C;
+      --line:rgba(255,255,255,.16);
       --max:750px;
     }
     * { box-sizing:border-box; }
@@ -34,8 +37,8 @@
       min-height:100vh;
       margin:0;
       background:
-        radial-gradient(ellipse at 15% -15%,rgba(17,134,245,.09),transparent 42%),
-        radial-gradient(ellipse at 85% -10%,rgba(215,7,107,.08),transparent 42%),
+        radial-gradient(ellipse at 15% -15%,rgba(255,201,60,.07),transparent 42%),
+        radial-gradient(ellipse at 85% -10%,rgba(255,111,60,.07),transparent 42%),
         var(--bg);
       color:var(--ink);
       font-family:"Raleway",sans-serif;
@@ -85,16 +88,16 @@
       gap:10px;
       border-radius:999px;
       background:linear-gradient(100deg,var(--blue),var(--purple) 52%,var(--pink));
-      color:#fff;
+      color:#0f0f0e;
       font-family:inherit;
       font-size:1.05rem;
       font-weight:750;
       text-decoration:none;
-      box-shadow:0 12px 28px rgba(153,1,229,.28);
+      box-shadow:0 12px 28px rgba(255,154,60,.18);
       transition:transform 160ms ease,box-shadow 160ms ease;
     }
     button.action { width:100%; border:0; cursor:pointer; }
-    .action:hover { transform:translateY(-2px); box-shadow:0 16px 34px rgba(215,7,107,.32); }
+    .action:hover { transform:translateY(-2px); box-shadow:0 16px 34px rgba(255,111,60,.25); }
     .action:focus-visible, .modal-close:focus-visible, .modal-links a:focus-visible, .socials a:focus-visible {
       outline:3px solid var(--ink);
       outline-offset:3px;
@@ -123,7 +126,7 @@
       display:grid;
       place-items:center;
       padding:24px;
-      background:rgba(21,18,25,.28);
+      background:rgba(0,0,0,.72);
       backdrop-filter:blur(9px);
     }
     .modal-card {
@@ -132,8 +135,8 @@
       padding:40px;
       border:1px solid var(--line);
       border-radius:24px;
-      background:#fff;
-      box-shadow:0 25px 70px rgba(30,25,35,.24);
+      background:#1b1b19;
+      box-shadow:0 25px 70px rgba(0,0,0,.45);
     }
     .modal-card h2 { margin:0 0 26px; font-size:2rem; line-height:1; letter-spacing:-.04em; }
     .modal-close {
@@ -146,12 +149,12 @@
       place-items:center;
       border:0;
       border-radius:50%;
-      background:rgba(11,11,16,.07);
+      background:rgba(255,255,255,.1);
       color:var(--ink);
       font-size:1.7rem;
       cursor:pointer;
     }
-    .modal-close:hover { background:var(--pink); color:#fff; }
+    .modal-close:hover { background:var(--pink); color:#0f0f0e; }
     .modal-links { display:grid; gap:9px; }
     .modal-links a {
       display:flex;
@@ -160,13 +163,13 @@
       gap:14px;
       padding:0 17px;
       border-radius:11px;
-      background:#f4f3f6;
+      background:#292927;
       color:var(--ink);
       font-weight:650;
       text-decoration:none;
       transition:background 160ms ease,transform 160ms ease;
     }
-    .modal-links a:hover { transform:translateX(2px); background:#ece9f1; }
+    .modal-links a:hover { transform:translateX(2px); background:#373632; }
     .link-icon {
       display:grid;
       width:30px;
@@ -184,9 +187,9 @@
       stroke-linejoin:round;
       stroke-width:1.8;
     }
-    .modal-links a:nth-child(2) .link-icon { color:#b949f2; }
-    .modal-links a:nth-child(3) .link-icon { color:#538eff; }
-    .modal-links a:nth-child(4) .link-icon { color:#e9388b; }
+    .modal-links a:nth-child(2) .link-icon { color:var(--purple); }
+    .modal-links a:nth-child(3) .link-icon { color:var(--blue); }
+    .modal-links a:nth-child(4) .link-icon { color:var(--pink); }
     @media (max-width:560px) {
       main, footer { width:min(calc(100% - 28px),var(--max)); }
       .hero { min-height:calc(100vh - 130px); padding-top:28px; }
@@ -202,7 +205,7 @@
   <main>
     <header class="hero">
       <div class="logo-card">
-        <img class="logo" src="VAC.png" alt="VAC — Vulgarisateur Apple &amp; Cie">
+        <img class="logo" src="VAC-nouveau.png" alt="VAC — Vulgarisateur Apple &amp; Cie" width="1480" height="402">
       </div>
       <h1 class="brand-line">Vulgarisateur Apple &amp; Cie</h1>
       <p class="tagline">Des vidéos pour mieux utiliser la technologie, faire durer vos appareils, protéger vos données et découvrir des outils vraiment utiles. Apple, logiciels, productivité, vie privée et numérique expliqué simplement, sans jargon.</p>
